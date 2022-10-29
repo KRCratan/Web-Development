@@ -1,0 +1,18 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    border: 3px  dotted black ;
+    padding: 2px;
+    background: fixed;
+
+
+}
+h2{
+    height: 100px;
+}
+p{
+    font-family: cursive;
+    border: s;
+}

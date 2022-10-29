@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> List</title>
+</head>
+<body bgcolor="white"> 
+    <h2 align="center"> List</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Carrot</li>
+        <li>Mango</li>
+        <li>Guava</li>
+    </ul>
+   <h3> Ordered List</h3>
+    <ol>
+        <li>Bangalore</li>
+        <li>Sasaram</li>
+        <li>Jaipur</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul type="square">
+        <li>Carrot</li>
+        <li>Mango</li>
+        <li>Guava</li>
+    </ul>
+   <h3> Ordered List</h3>       
+    <ol type="A">             <!--<ol type="1"-->
+                              <!--<ol type="a"-->
+                              <!--<ol type="A"-->
+                              <!--<ol type="i"-->
+        <li>Bangalore</li>
+        <li>Sasaram</li>
+        <li>Jaipur</li>
+    </ol>
+    
+     <h2 align="center">Nesting:</h2>
+     <ul>
+        <li>Vegetable
+            <ul>
+                <li>Potato</li>
+                <li>Tomato</li>
+                <li>Carrot</li>
+            </ul>
+        </li>
+     </ul>
+
+     <ul>
+        <li>Fruits
+            <ol type="a">
+                <li>Potato</li>
+                <li>Tomato</li>
+                <li>Carrot</li>
+            </ol>
+        </li>
+     </ul>
+  
+
+<h2 align="center">Description List</h2>
+
+<dl>
+    <dt><b>Coffee:</b></dt>
+    <dd>It is drinkable material</dd>
+    <dt><b>HTML:</b></dt>
+    <dd>Hyper text markup language</dd>
+</dl>
+
+
+<h1 align="center">Registration Form</h1>
+<form>
+    <fieldset>
+        <legend>Personal Details:</legend>
+    <label for="name"><b>Username:</b></label>
+    <input type="text" id="name" placeholder="Username" required><br><br>
+
+    <label for="password"><b>Password:</b></label>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+
+    <label><b>Educational qualification:</b></label>
+    <input type="checkbox" name="s1">Matriculation
+    <input type="checkbox" name="s1"> Grade 12
+    <input type="checkbox" name="s1"> Under-Graduation
+    <input type="checkbox" name="s1">Post-Graduation <br><br>
+
+
+    <label for="gender"><b>Gender:</b></label>
+    <input type="radio" id="gender" name="r1">Male
+    <input type="radio" id="gender" name="r1">Female 
+    <input type="radio" id="gender" name="r1">Trans<br><br>
+
+    <label for="food"><b>Favourite food:</b></label>
+    <select id="food">
+        <option>Desi</option>
+        <option>Chinese</option>
+        <option> Traditional</option>
+        <option>Korean</option>
+    </select> <br><br>
+
+    <label for="country"><b>International Trip:</b></label>
+    <select id="country">
+        <option>Pakistan</option>
+        <option>China</option>
+        <option> USA</option>
+        <option>UK</option>
+    </select><br><br>
+
+    <label><b>Address:</b></label>
+    <textarea rows="3" column="2"placeholder="Enter address here..." required></textarea><br>
+
+    <button type="reset">Clear</button>
+    <button type="submit" onclick="alert('Verify before Submit!!!')">Submit</button>
+</form>
+</fieldset>
+
+<h2 align="center">Table</h2>
+<table border="2px" bgcolor="#c3c3c3">
+    <tr bgcolor="blue">
+      <th colspan="2">Player Name</th>
+      <th colspan="2">Board Name</th>
+      <th colspan="2">Country</th>
+    </tr>
+    <tr bgcolor="white" >
+        <td  colspan="2">M.S. Dhoni</td>
+        <td colspan="2"> BCCI</td>
+        <td colspan="2">India</td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="2">John Smith</td>
+        <td colspan="2"> ACB</td>
+        <td colspan="2">Australia</td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="2">Chris gyale</td>
+        <td colspan="2"> WICB</td>
+        <td colspan="2">West-Indies</td>
+    </tr>
+</table><br><br>
+
+<table border="2px" bgcolor="#c3c3c3">
+    <tr bgcolor="blue">
+      <th colspan="2">Player Name</th>
+      <th colspan="2">Team Name</th>
+      <th colspan="2">Country</th>
+    </tr>
+    <tr bgcolor="white" >
+        <td  colspan="2">M.S. Dhoni</td>
+        <td colspan="2"> CSK</td>
+        <td rowspan="2" align="center">India</td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="2">Virat Kohli</td>
+        <td rowspan="2" align="center">RCB </td>
+    </tr>
+    <tr bgcolor="white">
+        <td colspan="2">Chris gyale</td>
+        <td colspan="2">West-Indies</td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
