@@ -1,0 +1,35 @@
+​ hi
+KRS_Day3.5.html:44 Live reload enabled.
+KRS_Day3.5.html:1 Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+injected.js:894 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'scripts')
+    at loadScript (injected.js:894:16)
+polyfill.js:1272 Uncaught (in promise) Error: Could not establish connection. Receiving end does not exist.
+    at wrappedSendMessageCallback (polyfill.js:1272:20)
+:5500/favicon.ico:1          Failed to load resource: the server responded with a status of 404 (Not Found)
+DevTools failed to load source map: Could not load content for chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/browser-polyfill.js.map: System error: net::ERR_FILE_NOT_FOUND
+Console.log("hi")
+VM76:1 Uncaught ReferenceError: Console is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM76:1
+var ab = 1
+undefined
+console.log(ab)
+VM157:1 1
+undefined
+console.log(typeof ab)
+VM189:1 number
+undefined
+console.log("Ratan")
+VM264:1 Ratan
+undefined
+console.log(typeof "Ratan")
+VM314:1 string
+undefined
+1+1
+2
+1+"1"
+'11'
+/*  javaScript is also known by Weekly typed */
+undefined
+/*  javaScript is dynamically, Weekly typed programming language*/
+undefined
