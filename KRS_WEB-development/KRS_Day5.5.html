@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Javascript HTML Dom</h3>
+    <p>Add a new HTML element.</p>
+
+    <div id="div1">
+        <p id="p1">This is paragraph</p>
+        <p id="p2">This is another paragraph</p>
+
+    </div>
+   <script>
+       const para = document.createElement("p");
+       const node = document.createTextNode("This ia a new para written by JavaScript")
+       para.style.color="red"
+       para.appendChild(node);
+
+       const element = document.getElementById("div1");
+       element.id="txt";
+       const child = document.getElementById("p1")
+       element.insertBefore(para,child)
+
+   </script>
+
+</body>
+</html>

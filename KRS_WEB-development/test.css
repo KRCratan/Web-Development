@@ -1,0 +1,107 @@
+    <!-- Navigation Bar -->
+    <div class="nav_main">
+        <h2 class="nav_main_logo"><img src="fca.svg" class="nav_main_logo"></h2>
+         <input type="checkbox" id="chk">
+          <label for="chk" class="show-menu-btn">
+           <i class="fa fa-bars"></i>
+          </label>
+           <ul class="nav_menu_main">
+             <a href="#">Home</a>
+             <a href="#">Services</a>
+             <a href="#">Resources</a>
+             <a href="#">Employment</a>
+             <a href="#">The Team</a>
+             <label for="chk" class="hide-menu-btn">
+               <i class="fa fa-times"></i>
+             </label>
+           </ul>
+         </div>
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.nav_main {
+  height: 100px;
+  background-color: #fff;
+  padding: 0 20px;
+  color: red;
+}
+.nav_main_logo {
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.nav_menu_main {
+  float: right;
+  line-height: 100px;
+}
+.nav_menu_main a {
+  color: #005368;
+  text-transform: uppercase;
+  padding: 0 10px;
+  transition: 0.4s;
+  font-family: 'Sriracha', cursive;
+}
+.show-menu-btn,.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn {
+  float: right;
+}
+.show-menu-btn i {
+  line-height: 100px;
+}
+
+/* TODO: Active tab
+.nav_menu_main a.active
+TODO: .hover */
+
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+  color: blue;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn {
+    display: block;
+  }
+  .nav_menu_main {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .nav_menu_main a {
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .nav_menu_main {
+    right: 0;
+  }
+}
