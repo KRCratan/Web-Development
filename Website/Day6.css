@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Aria;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 100px;
+}
+.modal-content{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid green;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+#course-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+
+}
+.course-card{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    columns: white;
+    background-color: #4094ec;
+    margin: 10px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: #181e25;
+    align-items: center;
+    padding: 0 30px;
+}
+.list{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
+.btn1{
+    background-color:green;
+}
+.btn2{
+    background-color: red;
+}
+.btn1,.btn2{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container1{
+    border: 1px solid black;
+    height: 500px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.podcast{
+    color: white;
+    background-color: #4094ec;
+    padding: 8px 12px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.heading1{
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+}
+.para{
+    width: 650px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.button1{
+    background-color: #4094ec;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.button1 a{
+    color: white;
+    text-decoration: none;
+}
+.button2{
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+.button2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.symbol{
+         font-size: 15px;
+}
+.container2{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.left-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.right-content{
+    width: 50%;
+
+}
+.content-list{
+    font-size: 16px;
+    color: gray;
+    width: 500px;
+
+}
+.discord-button{
+    border: none;
+    background-color: #4094ec;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+.discord-button a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+hr{
+    height: 3px;
+    width: 80%;
+    background-color: black;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+.content-links{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}

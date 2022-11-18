@@ -1,0 +1,130 @@
+body {
+    font-size: 16px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  form {
+    width: 800px;
+    height: auto;
+    background-color: rgba(170,182,198,0.5);
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 0;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  label i {
+    color: #999;
+    font-size: 80%;
+  }
+  input,
+  select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+  .row {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(82,82,185,0.3);
+    width: 100%;
+    padding: 7px 5px;
+    margin-bottom: 15px;
+    /* padding-bottom: 10px; */
+  }
+  .form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+  }
+  .form-inline label,
+  .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+  }
+  .error {
+    color: red;
+    font-size: 90%;
+  }
+  .conditions-list {
+    margin-left: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+.condition-check {
+    margin-left:20px;
+    margin-bottom: 20px;
+}
+
+.form-conditions {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-comments {
+    display: block;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.error {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: 400;
+}
+
+.buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.registration-page-btn {
+    background-color: rgba(115, 143, 196, 0.5);
+    font-size: 1rem;
+    width: 200px;
+    height: 50px;
+    padding: 6px;
+    margin: auto 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.registration-page-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#login-btn {
+    background-color: green;
+}
+
+#register-btn {
+    background-color: red;
+}
+
+#krs-logo {
+    height: 60px;
+}
+
+#login-btn:hover {
+    background-color: lightgreen;
+}
+
+#register-btn:hover {
+    background-color: lightcoral;
+}
+ 
