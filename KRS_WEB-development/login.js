@@ -52,3 +52,11 @@ function printError(elemId, hintMsg) {
                 alert(dataPreview);
               }
     
+              //  fetch part
+
+              let fetcheRes = fetch(
+                "https://https://jsonplaceholder.typicode.com/todos/1");
+                fetcheRes.then(res =>
+                res.json()).then(d=> {
+                    console.log(d)
+                })

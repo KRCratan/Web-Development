@@ -2,33 +2,32 @@ function printError(elemId, hintMsg) {
     document.getElementById(elemId).innerHTML = hintMsg;
   }
   var submit=document.getElementById("loginButton")
+  // console.log(loginButton)
   submit.onclick= function(){
     validateForm();
   }
   function validateForm() {
+    console.log(submit)
 
     var form=document.getElementById("myform")
     var name = form.name.value;
-    var email = form.email.value;
     var mobile =form.mobile.value;
+    var email = form.email.value;
     var gender =form.gender.value;
-    var country = form.country.value;
     var qual = form.qualification.value;
     var course = form.course.value;
+    var country = form.country.value;
     var terms = form.conditions.value;
     var comments = form.comments.value;
     
-  
-  
-  
     // Defining error variables with a default value
     var nameErr = true;
-    var emailErr = true;
     var mobileErr = true;
-    var countryErr = true;
+    var emailErr = true;
     var genderErr = true;
     var qualErr = true;
     var courseErr = true;
+    var countryErr = true;
     var termsErr = true;
     var commentsErr = true;
 
@@ -45,6 +44,18 @@ function printError(elemId, hintMsg) {
         nameErr = false;
       }
     }
+    // Validate mobile number
+    if (mobile == "") {
+      printError("mobileErr", "Please enter your mobile number");
+    } else {
+      var regex = /^[1-9]\d{9}$/;
+      if (regex.test(mobile) === false) {
+        printError("mobileErr", "Please enter a valid 10 digit mobile number");
+      } else {
+        printError("mobileErr", "");
+        mobileErr = false;
+      }
+    }
   
     // email
     if (email == "") {
@@ -59,27 +70,6 @@ function printError(elemId, hintMsg) {
       }
     }
   
-    // Validate mobile number
-    if (mobile == "") {
-      printError("mobileErr", "Please enter your mobile number");
-    } else {
-      var regex = /^[1-9]\d{9}$/;
-      if (regex.test(mobile) === false) {
-        printError("mobileErr", "Please enter a valid 10 digit mobile number");
-      } else {
-        printError("mobileErr", "");
-        mobileErr = false;
-      }
-    }
-  
-    // Validate country
-    if (country == "Select") {
-      printError("countryErr", "Please select your country");
-    } else {
-      printError("countryErr", "");
-      countryErr = false;
-    }
-  
     // Validate gender
     if (gender == "") {
       printError("genderErr", "Please select your gender");
@@ -87,6 +77,7 @@ function printError(elemId, hintMsg) {
       printError("genderErr", "");
       genderErr = false;
     }
+    // qualification
 
     if(qual == ""){
       printError("qualErr", "Please select your qualification");
@@ -101,6 +92,13 @@ function printError(elemId, hintMsg) {
     } else {
       printError("courseErr", "");
       courseErr = false;
+    }
+    // Validate country
+    if (country == "Select") {
+      printError("countryErr", "Please select your country");
+    } else {
+      printError("countryErr", "");
+      countryErr = false;
     }
 
     // Validate terms

@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./registerpage.css" />
   </head>
   <body>
-    <form id="myform" onsubmit="return validateForm()">
+    <form
+     id="myform"
+     onsubmit="return validateForm()">
       <h2>Registration Form</h2>
       <!--  name -->
       <div class="row">
@@ -42,7 +44,7 @@
           <label><input type="radio" name="qualification" value="student" /> Student</label>
           <label><input type="radio" name="qualification" value="teacher" /> Teacher</label>
         </div>
-        <div class="error" id="qualificationErr"></div>
+        <div class="error" id="qualErr"></div>
       </div>
       <!-- course -->
       <div class="row">
@@ -51,7 +53,7 @@
           <label><input type="radio" name="course" value="web development" /> Web Development</label>
           <label><input type="radio" name="course" value="app development" />App Development</label>
         </div>
-        <div class="error" id="qualificationErr"></div>
+        <div class="error" id="courseErr"></div>
       </div>
       <!-- Country -->
       <div class="row">
@@ -62,6 +64,7 @@
           <option>India</option>
           <option>United States</option>
           <option>United Kingdom</option>
+          <option>Srilanka</option>
         </select>
         <div class="error" id="countryErr"></div>
       </div>
@@ -79,44 +82,21 @@
     </div>
     <div class="error" id="termsErr"></div><br>
 </div>
+<!-- comment -->
 <div>
     <label for="comments">Comments:</label>
-    <textarea name="comments" class="form-comments" id="" cols="80" rows="10" placeholder="Enter your comment here...."></textarea>
+    <textarea name="comments" class="form-comments" cols="80" rows="10" placeholder="Enter your comment here...."></textarea>
     <div class="error" id="commentsErr"></div><br>
 </div>
+<!-- button -->
 <div class="buttons">
-    <button class="registration-page-btn" id="loginButton" type="button">Save Changes</button>
-    <button class="registration-page-btn" type="reset">Clear</button>
+    <button class="registration-page-btn" id="loginButton" onclick="login" type="submit" value="submit">Save Changes</button>
+    <button class="registration-page-btn" type="reset" value="clear" >Clear</button>
 </div> 
 </div>
 </form>
 </div>
 </div>
 </div>
-<hr>
-<!-- FOOTER -->
-<div class="footer" id="footer">
-<div class="footer-logo">
-<img src="https://krs.kiit.ac.in/assets/KRS.b5e08628.png" alt="krs-logo" id="krs-logo-footer">
-</div>
-<div class="footer-links">
-<div class="sitemap">
-<h2>Sitemap</h2>
-<h3>Home</h3>
-<h3>About Us</h3>
-<h3>Contact Us</h3>
-</div>
-<div class="contact-links">
-<h2>Contact Us</h2>
-<h3>Instagram</h3>
-<h3>Twitter</h3>
-<h3>Facebook</h3>
-<h3>YouTube</h3>
-<h3>E-Mail</h3>
-</div>
-</div>
-</div>
-    </form>
-    <script src="./forms.js"></script>
   </body>
 </html>

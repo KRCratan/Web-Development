@@ -1,4 +1,4 @@
-body {
+  body {
     font-size: 16px;
     font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   }
@@ -114,10 +114,6 @@ body {
 
 #register-btn {
     background-color: red;
-}
-
-#krs-logo {
-    height: 60px;
 }
 
 #login-btn:hover {
