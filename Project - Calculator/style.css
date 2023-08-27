@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+/* For button like numbers and symbols */
+input {
+  margin: 6px;
+  width: 23%;
+  height: 100px;
+  font-size: 30px;
+}
+/* For Displaying results */
+.eee {
+  width: 99%;
+  height: 150px;
+  background-color: silver;
+}
